@@ -1,7 +1,7 @@
 let todoItemsContainer = document.getElementById("todoItemsContainer");
 let addTodoButton = document.getElementById("addTodoButton");
 let saveTodoButton = document.getElementById("saveTodoButton");
-
+console.log(saveTodoButton.textContent);
 function getTodoListFromLocalStorage() {
     let stringifiedTodoList = localStorage.getItem("todoList");
     let parsedTodoList = JSON.parse(stringifiedTodoList);
